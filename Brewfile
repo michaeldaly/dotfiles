@@ -67,6 +67,7 @@ cask 'notion'
 # cask 'ray'
 # cask 'screenflow'
 cask 'slack'
+cask 'spectacle'
 cask 'spotify'
 cask 'tableplus'
 # cask 'telegram-desktop'
@@ -102,3 +103,4 @@ cask 'visual-studio-code'
 # mas 'Speedtest', id: 1153157709
 # mas 'Things', id: 904280696
 # mas 'Tweetbot', id: 1384080005
+mas 'Xcode', id: 497799835
