@@ -19,6 +19,8 @@ fi
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+source $HOME/.zshrc
+
 # Update Homebrew recipes
 brew update
 
