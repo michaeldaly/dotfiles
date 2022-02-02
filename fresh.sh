@@ -15,13 +15,16 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+rm -rf $HOME/.zshrc
+ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
 # Update Homebrew recipes
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-brew bundle --file ~/.dotfiles/Brewfile
+brew bundle --file $DOTFILES/Brewfile
 
 # Set macOS preferences - we will run this last because this will reload the shell
-# source $DOTFILES/.macos
-source ~/.dotfiles/.macos
+source $DOTFILES/.macos
