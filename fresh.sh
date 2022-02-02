@@ -21,14 +21,14 @@ rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Use ZSH to source the files
-zsh $HOME/.zshrc
+# zsh $HOME/.zshrc
 
 # Update Homebrew recipes
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-brew bundle --file $DOTFILES/Brewfile
+brew bundle --file ~/.dotfiles/Brewfile
 
 # Set macOS preferences - we will run this last because this will reload the shell
-source $DOTFILES/.macos
+source ~/.dotfiles/.macos
