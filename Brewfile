@@ -20,7 +20,7 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 # brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'stripe/stripe-cli/stripe'
-brew 'stripe/stripe-mock/stripe-mock'
+# brew 'stripe/stripe-mock/stripe-mock'
 # brew 'svn' # Needed to install fonts
 
 # Spatie Medialibrary
@@ -31,24 +31,27 @@ brew 'stripe/stripe-mock/stripe-mock'
 # brew 'gifsicle'
 
 # Development
-# brew 'php'
-# brew 'php@8.0'
-# brew 'php@7.4'
-# brew 'composer'
+brew 'php'
+brew 'php@8.1'
+brew 'php@7.4'
+brew 'composer'
+brew 'go'
 # brew 'imagemagick'
 # brew 'meilisearch'
 # brew 'mysql'
-# brew 'nginx'
-# brew 'node'
+brew 'nginx'
+brew 'node'
 # brew 'redis'
 # brew 'yarn'
 
 # Apps
 # cask '1password'
+cask 'affinity-designer'
+cask 'affinity-photo'
 cask 'android-studio'
 # cask 'caffeine'
 # cask 'dbngin'
-# cask 'discord'
+cask 'discord'
 cask 'docker'
 cask 'figma'
 cask 'firefox'
@@ -79,7 +82,7 @@ cask 'todoist'
 # cask 'tuple'
 cask 'visual-studio-code'
 # cask 'whatsapp'
-# cask 'zoom'
+cask 'zoom'
 
 # # Quicklook
 # cask 'qlmarkdown'
